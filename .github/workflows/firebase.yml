@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+  
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -20,4 +20,4 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
-          firebase deploy --only hosting --token "$FIREBASE_TOKEN"
+          firebase deploy --only hosting --token "1//0gOGY0JFMebw5CgYIARAAGBASNwF-L9IrmqTWUpAppl9q22pY_dvFrxdcLMJUF0rPCeJN_EU3heCsIL6_YpwloglEJopxY5FAQJo"
