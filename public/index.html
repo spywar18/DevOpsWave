@@ -45,30 +45,6 @@
   </nav>
   
   <!-- Main Content -->
-  <main>
-    // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyCIED9ShVBC9ycTz_lcd9xXiQnj5aZ_4EE",
-  authDomain: "devopswave-35f16.firebaseapp.com",
-  projectId: "devopswave-35f16",
-  storageBucket: "devopswave-35f16.appspot.com",
-  messagingSenderId: "807995841006",
-  appId: "1:807995841006:web:1fb6619f1589e1ce5256ff",
-  measurementId: "G-6S5J39E40G"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-  </main>
-  
   <div class="flex-1 flex items-center justify-center">
     <div class="bg-white rounded-lg p-8 shadow-md w-96">
       <h1 class="text-3xl font-bold mb-6 text-center text-blue-700">CI/CD Pipeline Demo</h1>
@@ -82,6 +58,29 @@ const analytics = getAnalytics(app);
     document.getElementById('triggerButton').addEventListener('click', () => {
       alert('Congratulations! Your CI/CD pipeline is working.');
     });
+  </script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCIED9ShVBC9ycTz_lcd9xXiQnj5aZ_4EE",
+      authDomain: "devopswave-35f16.firebaseapp.com",
+      projectId: "devopswave-35f16",
+      storageBucket: "devopswave-35f16.appspot.com",
+      messagingSenderId: "807995841006",
+      appId: "1:807995841006:web:1fb6619f1589e1ce5256ff",
+      measurementId: "G-6S5J39E40G"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
   </script>
 </body>
 </html>
